@@ -7,70 +7,70 @@ import { Check, HelpCircle, ArrowRight } from 'lucide-react';
 
 const Pricing: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'Pricing - InsightSync';
+    document.title = '料金プラン - InsightSync';
   }, []);
 
   const pricingPlans = [
     {
-      title: "Free Trial",
-      price: "Free",
-      description: "Try InsightSync for 10 days with all features included.",
+      title: "無料トライアル",
+      price: "無料",
+      description: "InsightSyncの全機能を10日間無料でお試しいただけます。",
       features: [
-        { title: "Automatic meeting summaries", included: true },
-        { title: "Key point extraction", included: true },
-        { title: "Action item tracking", included: true },
-        { title: "Basic integrations (Slack, Zoom)", included: true },
-        { title: "Basic analytics dashboard", included: true },
-        { title: "10-day limit", included: true },
-        { title: "5 users maximum", included: true },
-        { title: "Email support", included: true },
-        { title: "Advanced team analytics", included: false },
-        { title: "Custom integrations", included: false },
-        { title: "Priority support", included: false }
+        { title: "会議自動要約", included: true },
+        { title: "重要ポイント抽出", included: true },
+        { title: "アクションアイテム管理", included: true },
+        { title: "基本連携（Slack, Zoom）", included: true },
+        { title: "基本分析ダッシュボード", included: true },
+        { title: "10日間利用", included: true },
+        { title: "最大5ユーザー", included: true },
+        { title: "メールサポート", included: true },
+        { title: "高度なチーム分析", included: false },
+        { title: "カスタム連携", included: false },
+        { title: "優先サポート", included: false }
       ],
-      ctaText: "Start Free Trial",
+      ctaText: "無料トライアルを始める",
       ctaLink: "/contact",
       popular: false
     },
     {
-      title: "Standard",
+      title: "スタンダード",
       price: "¥9,800",
-      description: "Perfect for small to medium-sized teams.",
+      description: "中小規模チームに最適なプランです。",
       features: [
-        { title: "Automatic meeting summaries", included: true },
-        { title: "Key point extraction", included: true },
-        { title: "Action item tracking", included: true },
-        { title: "All integrations (Slack, Zoom, Teams, etc.)", included: true },
-        { title: "Full analytics dashboard", included: true },
-        { title: "Unlimited usage", included: true },
-        { title: "Up to 25 users", included: true },
-        { title: "Email & chat support", included: true },
-        { title: "Advanced team analytics", included: true },
-        { title: "Custom integrations", included: false },
-        { title: "Priority support", included: false }
+        { title: "会議自動要約", included: true },
+        { title: "重要ポイント抽出", included: true },
+        { title: "アクションアイテム管理", included: true },
+        { title: "全連携（Slack, Zoom, Teams等）", included: true },
+        { title: "全分析ダッシュボード", included: true },
+        { title: "無制限利用", included: true },
+        { title: "最大25ユーザー", included: true },
+        { title: "メール・チャットサポート", included: true },
+        { title: "高度なチーム分析", included: true },
+        { title: "カスタム連携", included: false },
+        { title: "優先サポート", included: false }
       ],
-      ctaText: "Get Started",
+      ctaText: "申し込む",
       ctaLink: "/contact",
       popular: true
     },
     {
-      title: "Enterprise",
-      price: "Custom",
-      description: "For organizations with advanced needs and larger teams.",
+      title: "エンタープライズ",
+      price: "個別見積もり",
+      description: "大規模組織や高度な要件に対応するプランです。",
       features: [
-        { title: "Automatic meeting summaries", included: true },
-        { title: "Key point extraction", included: true },
-        { title: "Action item tracking", included: true },
-        { title: "All integrations + priority for new ones", included: true },
-        { title: "Full analytics dashboard", included: true },
-        { title: "Unlimited usage", included: true },
-        { title: "Unlimited users", included: true },
-        { title: "24/7 priority support", included: true },
-        { title: "Advanced team analytics", included: true },
-        { title: "Custom integrations", included: true },
-        { title: "Dedicated customer success manager", included: true }
+        { title: "会議自動要約", included: true },
+        { title: "重要ポイント抽出", included: true },
+        { title: "アクションアイテム管理", included: true },
+        { title: "全連携＋新規連携優先対応", included: true },
+        { title: "全分析ダッシュボード", included: true },
+        { title: "無制限利用", included: true },
+        { title: "ユーザー数無制限", included: true },
+        { title: "24時間365日サポート", included: true },
+        { title: "高度なチーム分析", included: true },
+        { title: "カスタム連携", included: true },
+        { title: "専任カスタマーサクセスマネージャー", included: true }
       ],
-      ctaText: "Contact Sales",
+      ctaText: "お問い合わせ",
       ctaLink: "/contact",
       popular: false
     }
@@ -78,28 +78,28 @@ const Pricing: React.FC = () => {
 
   const faqs = [
     {
-      question: "How does the free trial work?",
-      answer: "Our free trial gives you full access to all InsightSync features for 10 days, with no credit card required. You can add up to 5 team members to explore how the platform works with your existing workflows."
+      question: "無料トライアルはどのように利用できますか？",
+      answer: "InsightSyncの全機能を10日間、クレジットカード不要でご利用いただけます。最大5名までチームメンバーを追加可能です。"
     },
     {
-      question: "Can I cancel my subscription anytime?",
-      answer: "Yes, you can cancel your subscription at any time. We offer monthly and annual billing options, with a discount for annual commitments. If you cancel, you'll retain access until the end of your current billing period."
+      question: "いつでも解約できますか？",
+      answer: "はい、いつでも解約可能です。月額・年額プランがあり、年額は割引があります。解約後も契約期間終了まではご利用いただけます。"
     },
     {
-      question: "How is pricing calculated?",
-      answer: "Our Standard plan is priced at ¥9,800 per month for up to 25 users. For Enterprise customers with larger teams or specialized needs, we provide custom pricing based on your organization's size and requirements."
+      question: "料金はどのように決まりますか？",
+      answer: "スタンダードプランは最大25ユーザーまで月額9,800円です。エンタープライズはご要望に応じて個別見積もりとなります。"
     },
     {
-      question: "Do you offer discounts for nonprofits or educational institutions?",
-      answer: "Yes, we offer special pricing for qualified nonprofit organizations and educational institutions. Please contact our sales team to learn more about our nonprofit and education programs."
+      question: "非営利団体や教育機関向けの割引はありますか？",
+      answer: "はい、対象となる非営利団体・教育機関には特別価格をご用意しています。詳細はお問い合わせください。"
     },
     {
-      question: "What kind of support is included?",
-      answer: "All plans include email support. Standard plans add chat support, while Enterprise plans include 24/7 priority support and a dedicated customer success manager to ensure you get the most out of InsightSync."
+      question: "サポート内容は？",
+      answer: "全プランでメールサポート、スタンダードはチャットサポート、エンタープライズは24時間365日サポートと専任担当がつきます。"
     },
     {
-      question: "Can I change plans later?",
-      answer: "Absolutely! You can upgrade or downgrade your plan at any time. Upgrades take effect immediately, while downgrades will apply at the start of your next billing cycle."
+      question: "プランの変更は可能ですか？",
+      answer: "もちろん可能です。アップグレードは即時、ダウングレードは次回更新時に適用されます。"
     }
   ];
 
@@ -107,8 +107,8 @@ const Pricing: React.FC = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <Section
-        title={<>Simple, Transparent <span className="gradient-text">Pricing</span></>}
-        subtitle="Choose the plan that's right for your organization. No hidden fees or surprises."
+        title="シンプルで分かりやすい料金体系"
+        subtitle="組織に最適なプランをお選びください。追加料金や隠れた費用はありません。"
         className="pt-12"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -129,75 +129,75 @@ const Pricing: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-lg text-gray-600">
-            Need a custom solution? <Link to="/contact" className="text-primary-600 hover:text-primary-700 font-medium">Contact our sales team</Link>
+            カスタムプランをご希望の方は、<Link to="/contact" className="text-primary-600 hover:text-primary-700 font-medium">営業担当までご相談ください</Link>
           </p>
         </div>
       </Section>
 
       {/* Feature Comparison */}
       <Section
-        title="Compare Features"
-        subtitle="See which plan is right for your organization."
+        title="機能比較"
+        subtitle="各プランの違いを比較できます。"
         className="bg-gray-50"
       >
         <div className="overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
               <tr className="bg-primary-50">
-                <th className="text-left px-4 py-3 text-primary-950 font-semibold border-b border-gray-200">Feature</th>
-                <th className="text-center px-4 py-3 text-primary-950 font-semibold border-b border-gray-200">Free Trial</th>
-                <th className="text-center px-4 py-3 text-primary-950 font-semibold border-b border-gray-200 bg-primary-100">Standard</th>
-                <th className="text-center px-4 py-3 text-primary-950 font-semibold border-b border-gray-200">Enterprise</th>
+                <th className="text-left px-4 py-3 text-primary-950 font-semibold border-b border-gray-200">機能</th>
+                <th className="text-center px-4 py-3 text-primary-950 font-semibold border-b border-gray-200">無料トライアル</th>
+                <th className="text-center px-4 py-3 text-primary-950 font-semibold border-b border-gray-200 bg-primary-100">スタンダード</th>
+                <th className="text-center px-4 py-3 text-primary-950 font-semibold border-b border-gray-200">エンタープライズ</th>
               </tr>
             </thead>
             <tbody>
               {[
-                "Meeting summaries",
-                "Action item tracking",
-                "Decision extraction",
-                "Basic integrations",
-                "Advanced integrations",
-                "Custom integrations",
-                "Basic analytics",
-                "Advanced analytics",
-                "User limit",
-                "Usage limit",
-                "Email support",
-                "Chat support",
-                "Priority support",
-                "Dedicated success manager",
-                "Custom branding",
-                "SSO & advanced security"
+                "会議要約",
+                "アクションアイテム管理",
+                "意思決定抽出",
+                "基本連携",
+                "高度な連携",
+                "カスタム連携",
+                "基本分析",
+                "高度な分析",
+                "ユーザー上限",
+                "利用上限",
+                "メールサポート",
+                "チャットサポート",
+                "優先サポート",
+                "専任サクセスマネージャー",
+                "カスタムブランディング",
+                "SSO・高度なセキュリティ"
               ].map((feature, index) => (
                 <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
                   <td className="px-4 py-3 border-b border-gray-200 font-medium">{feature}</td>
                   <td className="text-center px-4 py-3 border-b border-gray-200">
-                    {["Meeting summaries", "Action item tracking", "Decision extraction", "Basic integrations", "Basic analytics", "Email support"].includes(feature) ? (
+                    {["会議要約", "アクションアイテム管理", "意思決定抽出", "基本連携", "基本分析", "メールサポート"].includes(feature) ? (
                       <Check className="h-5 w-5 text-green-500 mx-auto" />
-                    ) : feature === "User limit" ? (
-                      <span>5 users</span>
-                    ) : feature === "Usage limit" ? (
-                      <span>10 days</span>
+                    ) : feature === "ユーザー上限" ? (
+                      <span>5ユーザー</span>
+                    ) : feature === "利用上限" ? (
+                      <span>10日間</span>
                     ) : (
                       <span className="text-gray-400">-</span>
                     )}
                   </td>
                   <td className="text-center px-4 py-3 border-b border-gray-200 bg-primary-50">
-                    {["Meeting summaries", "Action item tracking", "Decision extraction", "Basic integrations", "Advanced integrations", "Basic analytics", "Advanced analytics", "Email support", "Chat support"].includes(feature) ? (
+                    {["会議要約", "アクションアイテム管理", "意思決定抽出", "基本連携", "高度な連携", "基本分析", "高度な分析", "メールサポート", "チャットサポート"].includes(feature) ? (
                       <Check className="h-5 w-5 text-green-500 mx-auto" />
-                    ) : feature === "User limit" ? (
-                      <span>25 users</span>
-                    ) : feature === "Usage limit" ? (
-                      <span>Unlimited</span>
+                    ) : feature === "ユーザー上限" ? (
+                      <span>25ユーザー</span>
+                    ) : feature === "利用上限" ? (
+                      <span>無制限</span>
                     ) : (
                       <span className="text-gray-400">-</span>
                     )}
                   </td>
                   <td className="text-center px-4 py-3 border-b border-gray-200">
-                    {feature === "User limit" ? (
-                      <span>Unlimited</span>
-                    ) : feature === "Usage limit" ? (
-                      <span>Unlimited</span>
+                    {feature === "ユーザー上限" ? (
+                      <span>無制限</span>
+                    ) : feature === "利用上限" ? (
+                      <span>無制限</span>
                     ) : (
                       <Check className="h-5 w-5 text-green-500 mx-auto" />
                     )}
@@ -209,10 +209,10 @@ const Pricing: React.FC = () => {
         </div>
       </Section>
 
-      {/* FAQs */}
+      {/* FAQセクション */}
       <Section
-        title="Frequently Asked Questions"
-        subtitle="Find answers to common questions about InsightSync's pricing and plans."
+        title="よくあるご質問"
+        subtitle="料金やサービスに関するご質問にお答えします。"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {faqs.map((faq, index) => (
@@ -224,23 +224,18 @@ const Pricing: React.FC = () => {
               viewport={{ once: true, margin: '-100px' }}
               className="bg-white rounded-lg p-6 shadow-md border border-gray-100"
             >
-              <div className="flex items-start gap-3">
-                <HelpCircle className="h-6 w-6 text-primary-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="text-lg font-semibold mb-2 text-primary-950">{faq.question}</h3>
-                  <p className="text-gray-600">{faq.answer}</p>
-                </div>
-              </div>
+              <h3 className="text-lg font-semibold mb-3 text-primary-950">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
             </motion.div>
           ))}
         </div>
         
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-6">
-            Have more questions? We're here to help.
+            もっと質問がある場合は、サポートにお問い合わせください。
           </p>
           <Link to="/contact" className="btn btn-primary inline-flex items-center">
-            Contact Support
+            サポートに問い合わせる
           </Link>
         </div>
       </Section>
@@ -268,13 +263,13 @@ const Pricing: React.FC = () => {
             </svg>
           </div>
           <p className="text-2xl text-white mb-8 leading-relaxed">
-            "InsightSync paid for itself in the first month. Our leadership team now spends 40% less time in meetings, and our decision quality has improved dramatically."
+            「InsightSyncを導入してから、会議時間が40%削減され、意思決定の質も大きく向上しました。」
           </p>
           <div className="flex items-center justify-center">
             <div className="w-12 h-12 rounded-full bg-primary-700 mr-4"></div>
             <div className="text-left">
-              <p className="font-semibold text-white">Akiko Yamamoto</p>
-              <p className="text-gray-300">COO, Global Innovations</p>
+              <p className="font-semibold text-white">山本 明子</p>
+              <p className="text-gray-300">COO, グローバルイノベーションズ</p>
             </div>
           </div>
         </motion.div>
@@ -293,15 +288,19 @@ const Pricing: React.FC = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-950">
-            Ready to transform your team's decision-making?
+            今すぐ無料トライアルを始めませんか？
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Start your free 10-day trial today. No credit card required.
+          <p className="text-xl text-gray-600 mb-8">
+            10日間の無料トライアルはクレジットカード不要でご利用いただけます。
           </p>
-          <Link to="/contact" className="btn btn-primary inline-flex items-center">
-            Start Free Trial
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/contact" className="btn btn-primary bg-white text-primary-950 hover:bg-gray-100">
+              無料トライアルを申し込む
+            </Link>
+            <Link to="/contact" className="btn btn-secondary border-white text-primary-950 hover:bg-white/10">
+              デモを依頼する
+            </Link>
+          </div>
         </motion.div>
       </Section>
     </div>

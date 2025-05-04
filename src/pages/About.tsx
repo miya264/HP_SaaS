@@ -12,55 +12,55 @@ import {
 
 const About: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'About Us - InsightSync';
+    document.title = '会社概要 - InsightSync';
   }, []);
 
   const values = [
     {
       icon: <Lightbulb className="h-6 w-6" />,
-      title: "Innovation",
-      description: "We constantly push the boundaries of what's possible with AI to create solutions that genuinely transform how organizations work."
+      title: "イノベーション",
+      description: "AIの可能性を追求し、組織の働き方を本質的に変革するソリューションを生み出します。"
     },
     {
       icon: <Target className="h-6 w-6" />,
-      title: "Customer Focus",
-      description: "Everything we build starts with understanding the real challenges our customers face in managing organizational knowledge."
+      title: "お客様志向",
+      description: "私たちの開発は常に、お客様が直面するリアルな課題の理解から始まります。"
     },
     {
       icon: <Shield className="h-6 w-6" />,
-      title: "Trust & Security",
-      description: "We handle sensitive organizational data with the highest standards of security and privacy protection."
+      title: "信頼とセキュリティ",
+      description: "大切な組織データを最高水準のセキュリティとプライバシーで守ります。"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Collaboration",
-      description: "We believe that the best outcomes happen when people and AI work together, combining human judgment with computational power."
+      title: "協働",
+      description: "人とAIが協力し合うことで、最良の成果が生まれると信じています。"
     }
   ];
 
   const team = [
     {
-      name: "Akira Tanaka",
-      role: "CEO & Co-Founder",
-      bio: "Former VP of Product at a major AI firm, Akira brings 15+ years of experience in enterprise software and artificial intelligence.",
+      name: "田中 明",
+      role: "代表取締役・共同創業者",
+      bio: "大手AI企業でプロダクトVPを歴任。エンタープライズソフトウェアとAI分野で15年以上の経験を持つ。",
       image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-      name: "Emma Chen",
-      role: "CTO & Co-Founder",
-      bio: "With a PhD in Machine Learning from MIT, Emma leads our engineering team in developing our proprietary AI models and technology.",
+      name: "エマ・チェン",
+      role: "CTO・共同創業者",
+      bio: "MITで機械学習の博士号を取得。独自AIモデルの開発をリード。",
       image: "https://images.pexels.com/photos/773371/pexels-photo-773371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-      name: "Hiroshi Yamamoto",
-      role: "Chief AI Officer",
-      bio: "Previously led AI research at a Fortune 500 company, Hiroshi specializes in natural language processing and conversation analysis.",
+      name: "山本 博",
+      role: "チーフAIオフィサー",
+      bio: "フォーチュン500企業でAI研究を主導。自然言語処理と会話分析の専門家。",
       image: "https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-      name: "Sarah Johnson",
-      role: "VP of Customer Success",
-      bio: "With over a decade in enterprise SaaS, Sarah ensures our customers achieve measurable ROI and meaningful transformation.",
+      name: "サラ・ジョンソン",
+      role: "カスタマーサクセス担当VP",
+      bio: "エンタープライズSaaS分野で10年以上の経験。顧客のROI最大化を支援。",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
   ];
@@ -69,8 +69,8 @@ const About: React.FC = () => {
     <div className="pt-24">
       {/* Hero Section */}
       <Section
-        title={<>Our <span className="gradient-text">Mission</span></>}
-        subtitle="We're creating a future where human-AI collaboration transforms how organizations make decisions."
+        title="私たちのミッション"
+        subtitle="人とAIの協働で、組織の意思決定を進化させる未来を創造します。"
         className="pt-12"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -80,16 +80,16 @@ const About: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-2xl font-bold mb-6 text-primary-950">
-              People and AI, Working Together
+              人とAIが共に創る新しい価値
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              InsightSync was founded in 2022 with a clear vision: to help organizations make better decisions by combining human expertise with artificial intelligence.
+              InsightSyncは2022年、「人の知見とAIの力を融合し、より良い意思決定を支援する」という明確なビジョンのもと設立されました。
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Too often, valuable insights are lost in the noise of daily communications—buried in lengthy meetings, sprawling chat threads, and isolated documents. We're changing that by creating technology that captures, organizes, and surfaces the information that matters.
+              日々のコミュニケーションの中で埋もれがちな貴重な知見を、テクノロジーの力で引き出し、整理し、必要な情報として活用できる世界を目指しています。
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Our team brings together expertise in artificial intelligence, natural language processing, and enterprise software to create solutions that seamlessly integrate with how organizations already work.
+              AI・自然言語処理・エンタープライズソフトウェアの専門家が集い、既存の業務フローに自然に溶け込むソリューションを開発しています。
             </p>
           </motion.div>
           
@@ -110,8 +110,8 @@ const About: React.FC = () => {
 
       {/* Our Values */}
       <Section
-        title="Our Values"
-        subtitle="The principles that guide everything we do."
+        title="私たちの価値観"
+        subtitle="私たちの行動指針・大切にしている考え方"
         className="bg-gray-50"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -136,41 +136,41 @@ const About: React.FC = () => {
 
       {/* Timeline */}
       <Section
-        title="Our Journey"
-        subtitle="From idea to industry leader in AI-powered business intelligence."
+        title="歩み"
+        subtitle="AIビジネスインテリジェンス分野で業界をリードするまでの道のり"
       >
         <div className="relative">
           {/* Connection line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-primary-200 transform -translate-x-1/2 hidden md:block"></div>
+          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-primary-200 transform -translate-x-1/2 hidden md:block z-0"></div>
           
           <div className="space-y-16">
             {[
               {
                 year: "2022",
-                title: "The Beginning",
-                description: "InsightSync was founded by Akira Tanaka and Emma Chen, who saw the potential for AI to transform organizational decision-making.",
+                title: "創業",
+                description: "田中明・エマ・チェンが、AIによる意思決定改革の可能性を信じてInsightSyncを設立。",
                 align: "left"
               },
               {
                 year: "2023",
-                title: "First Product Launch",
-                description: "After a year of development, we launched our first product, focusing on meeting intelligence and summary generation.",
+                title: "初プロダクトリリース",
+                description: "1年の開発期間を経て、会議インテリジェンスと要約生成に特化した最初の製品をリリース。",
                 align: "right"
               },
               {
                 year: "2024",
-                title: "Series A Funding",
-                description: "We secured $12M in Series A funding to expand our product capabilities and grow our team across engineering and customer success.",
+                title: "シリーズA資金調達",
+                description: "エンジニアリング・カスタマーサクセス体制強化のため、1,200万ドルの資金調達を実施。",
                 align: "left"
               },
               {
                 year: "2025",
-                title: "Global Expansion",
-                description: "Today, we're serving hundreds of organizations worldwide, with offices in Tokyo, San Francisco, and London.",
+                title: "グローバル展開",
+                description: "現在は東京・サンフランシスコ・ロンドンに拠点を持ち、世界中の組織を支援。",
                 align: "right"
               }
             ].map((milestone, index) => (
-              <div key={index} className={`flex items-center ${milestone.align === 'right' ? 'md:flex-row-reverse' : ''}`}>
+              <div key={index} className={`relative z-10 flex items-center ${milestone.align === 'right' ? 'md:flex-row-reverse' : ''}`}>
                 <motion.div
                   initial={{ opacity: 0, x: milestone.align === 'left' ? -20 : 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -206,8 +206,8 @@ const About: React.FC = () => {
 
       {/* Team Section */}
       <Section
-        title="Meet Our Team"
-        subtitle="The passionate experts behind InsightSync."
+        title="私たちのチーム"
+        subtitle="InsightSyncを支える情熱的な専門家たち"
         className="bg-gray-50"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -235,12 +235,12 @@ const About: React.FC = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <h3 className="text-xl font-bold mb-4 text-primary-950">Join Our Team</h3>
+          <h3 className="text-xl font-bold mb-4 text-primary-950">一緒に働きませんか？</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            We're always looking for talented individuals who are passionate about AI, software development, and transforming how organizations work.
+            私たちはAIやソフトウェア開発、組織変革に情熱を持つ仲間を常に募集しています。
           </p>
           <Link to="/contact" className="btn btn-primary inline-flex items-center">
-            View Open Positions
+            採用情報を見る
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
@@ -259,17 +259,17 @@ const About: React.FC = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Join Us in Transforming Decision Intelligence
+            意思決定の未来を共に創りませんか？
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Have questions or want to learn more about our mission and solutions?
+            ご質問や、私たちのミッション・ソリューションについて詳しく知りたい方はお気軽にご連絡ください。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="btn btn-primary bg-white text-primary-950 hover:bg-gray-100">
-              Contact Us
+              お問い合わせ
             </Link>
-            <Link to="/services" className="btn btn-secondary border-white text-white hover:bg-white/10">
-              Explore Our Services
+            <Link to="/services" className="btn btn-secondary border-white hover:bg-white/10">
+              サービスを見る
             </Link>
           </div>
         </motion.div>

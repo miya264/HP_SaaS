@@ -6,15 +6,15 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'Contact Us - InsightSync';
+    document.title = 'お問い合わせ - InsightSync';
   }, []);
 
   return (
     <div className="pt-24">
       {/* Hero Section */}
       <Section
-        title={<>Get in <span className="gradient-text">Touch</span></>}
-        subtitle="Have questions or ready to transform your organization's decision-making? We're here to help."
+        title="お問い合わせ"
+        subtitle="ご質問や導入のご相談など、お気軽にご連絡ください。"
         className="pt-12"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -23,59 +23,56 @@ const Contact: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-primary-950">Contact Information</h3>
+            <h3 className="text-2xl font-bold mb-6 text-primary-950">連絡先情報</h3>
             <div className="space-y-6 mb-8">
               <div className="flex items-start">
                 <div className="bg-primary-50 p-3 rounded-lg mr-4">
                   <MapPin className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Office Location</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">所在地</h4>
                   <p className="text-gray-600">
-                    123 AI Avenue, Tech District<br />
-                    Tokyo, Japan 100-0001
+                    〒100-0001<br />
+                    東京都千代田区テック地区AIアベニュー123<br />
+                    InsightSyncビル
                   </p>
                 </div>
               </div>
-              
               <div className="flex items-start">
                 <div className="bg-primary-50 p-3 rounded-lg mr-4">
                   <Phone className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Phone Number</h4>
-                  <p className="text-gray-600">+81 3-1234-5678</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">電話番号</h4>
+                  <p className="text-gray-600">03-1234-5678</p>
                 </div>
               </div>
-              
               <div className="flex items-start">
                 <div className="bg-primary-50 p-3 rounded-lg mr-4">
                   <Mail className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">メールアドレス</h4>
                   <p className="text-gray-600">info@insightsync.ai</p>
                 </div>
               </div>
-              
               <div className="flex items-start">
                 <div className="bg-primary-50 p-3 rounded-lg mr-4">
                   <Clock className="h-6 w-6 text-primary-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">営業時間</h4>
                   <p className="text-gray-600">
-                    Monday - Friday: 9:00 AM - 6:00 PM JST<br />
-                    Saturday - Sunday: Closed
+                    平日 9:00〜18:00（JST）<br />
+                    土日祝：休業
                   </p>
                 </div>
               </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bold mb-4 text-primary-950">Connect With Us</h3>
+              <h3 className="text-xl font-bold mb-4 text-primary-950">SNSでも最新情報を発信中</h3>
               <p className="text-gray-600 mb-6">
-                Follow us on social media for the latest updates, insights, and announcements.
+                最新のお知らせや活用事例はSNSでもご覧いただけます。
               </p>
               <div className="flex space-x-4">
                 {['twitter', 'linkedin', 'facebook'].map((platform, index) => (
@@ -91,7 +88,6 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </motion.div>
-          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -110,33 +106,33 @@ const Contact: React.FC = () => {
         <div className="rounded-xl overflow-hidden shadow-lg h-96 bg-gray-200">
           {/* Placeholder for map */}
           <div className="w-full h-full flex items-center justify-center bg-gray-200">
-            <p className="text-gray-500 font-medium">Interactive Map</p>
+            <p className="text-gray-500 font-medium">地図（準備中）</p>
           </div>
         </div>
       </Section>
 
       {/* FAQ Section */}
       <Section
-        title="Frequently Asked Questions"
-        subtitle="Quick answers to common questions."
+        title="よくあるご質問"
+        subtitle="お問い合わせの多い内容をまとめました。"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
             {
-              question: "How quickly can we get started with InsightSync?",
-              answer: "Most customers are up and running within 1-2 business days. Our team will help you with integration and onboarding to ensure a smooth start."
+              question: "どれくらい早く利用開始できますか？",
+              answer: "ほとんどのお客様は1〜2営業日以内にご利用開始いただけます。導入・連携もサポートします。"
             },
             {
-              question: "Do you offer customized demos?",
-              answer: "Yes, we offer personalized demos tailored to your organization's specific needs and use cases. Contact us to schedule one."
+              question: "個別デモは可能ですか？",
+              answer: "はい、貴社のご要望に合わせたデモを実施可能です。お気軽にご相談ください。"
             },
             {
-              question: "Is there a minimum contract length?",
-              answer: "Our Standard plan is available on both monthly and annual terms, with a discount for annual commitments. Enterprise plans typically start at 12 months."
+              question: "契約期間の縛りはありますか？",
+              answer: "スタンダードは月額・年額から選択可能（年額は割引あり）。エンタープライズは通常12ヶ月〜です。"
             },
             {
-              question: "How does the free trial work?",
-              answer: "Our 10-day free trial gives you full access to all features. No credit card is required, and you can add up to 5 team members to explore the platform."
+              question: "無料トライアルの内容は？",
+              answer: "10日間全機能をお試しいただけます。クレジットカード不要、最大5名まで追加可能です。"
             }
           ].map((faq, index) => (
             <motion.div
@@ -167,13 +163,13 @@ const Contact: React.FC = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary-950">
-            Ready to transform your organization?
+            組織の意思決定を進化させませんか？
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Start your free 10-day trial today or schedule a personalized demo with our team.
+            10日間の無料トライアルや個別デモもご用意しています。お気軽にご相談ください。
           </p>
           <div className="inline-block bg-white rounded-full px-6 py-3 shadow-lg border border-gray-200">
-            <span className="text-primary-950 font-medium">Your Journey to Better Decisions Starts Here</span>
+            <span className="text-primary-950 font-medium">ここから新しい意思決定体験を</span>
           </div>
         </motion.div>
       </Section>

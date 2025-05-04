@@ -21,15 +21,15 @@ import {
 
 const Services: React.FC = () => {
   React.useEffect(() => {
-    document.title = 'Services - InsightSync';
+    document.title = 'サービス - InsightSync';
   }, []);
 
   return (
     <div className="pt-24">
       {/* Hero Section */}
       <Section
-        title={<>Our <span className="gradient-text">Services</span></>}
-        subtitle="InsightSync offers a comprehensive suite of AI-powered tools to transform your organization's decision-making process."
+        title="当社のサービス"
+        subtitle="InsightSyncは、AIを活用した多彩なツール群で、組織の意思決定プロセスを革新します。"
         className="pt-12"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -38,16 +38,16 @@ const Services: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-primary-950">Transform Organizational Communication</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary-950">組織コミュニケーションの変革</h3>
             <p className="text-gray-600 mb-6">
-              InsightSync captures, analyzes, and organizes the valuable information exchanged in your meetings, chats, and documents. Our AI turns this communication data into structured insights that drive informed decisions.
+              InsightSyncは、会議・チャット・ドキュメントでやり取りされる貴重な情報をAIで分析・整理し、組織の意思決定を支えるインサイトに変換します。
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                'Real-time conversation analysis and summary',
-                'Automatic action item extraction and tracking',
-                'Cross-platform integration with your existing tools',
-                'Team alignment visualization and monitoring'
+                'リアルタイムでの会話分析と要約',
+                'アクションアイテムの自動抽出・追跡',
+                '既存ツールとのクロスプラットフォーム連携',
+                'チームの方向性可視化とモニタリング'
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <Check className="h-5 w-5 text-primary-600 mt-1 mr-3 flex-shrink-0" />
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
               ))}
             </ul>
             <Link to="/contact" className="btn btn-primary inline-flex items-center">
-              Get Started
+              お問い合わせ
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </motion.div>
@@ -78,43 +78,43 @@ const Services: React.FC = () => {
 
       {/* Core Features Section */}
       <Section
-        title="Core Features"
-        subtitle="Explore our complete suite of AI-powered tools designed to streamline your organizational decision-making."
+        title="主な機能"
+        subtitle="組織の意思決定を加速するAI搭載ツールを幅広くご用意しています。"
         className="bg-gray-50"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               icon: <MessageSquare className="h-8 w-8" />,
-              title: "Meeting Intelligence",
-              description: "Automatically summarize meetings, extract action items, and organize key insights into searchable knowledge bases.",
+              title: "会議インテリジェンス",
+              description: "会議内容を自動で要約し、アクションアイテムや重要ポイントをナレッジベースに整理します。",
               features: [
-                "Real-time transcription and summary",
-                "Sentiment analysis and consensus tracking",
-                "Automatic action item assignment",
-                "Meeting effectiveness scoring"
+                "リアルタイム文字起こし・要約",
+                "感情分析・合意形成の可視化",
+                "アクションアイテムの自動割り当て",
+                "会議の有効性スコアリング"
               ]
             },
             {
               icon: <BarChart2 className="h-8 w-8" />,
-              title: "Decision Analytics",
-              description: "Visualize decision patterns, track implementation, and measure outcomes to improve your organization's decision quality over time.",
+              title: "意思決定アナリティクス",
+              description: "意思決定の傾向や実行状況を可視化し、組織の判断力向上を支援します。",
               features: [
-                "Decision tracking dashboard",
-                "Implementation rate monitoring",
-                "Outcome measurement tools",
-                "Historical decision analysis"
+                "意思決定ダッシュボード",
+                "実行率のモニタリング",
+                "成果測定ツール",
+                "過去の意思決定分析"
               ]
             },
             {
               icon: <Users className="h-8 w-8" />,
-              title: "Team Alignment",
-              description: "Identify areas of agreement and misalignment to build stronger consensus and more unified execution.",
+              title: "チームアラインメント",
+              description: "合意点・相違点を特定し、チームの一体感と実行力を高めます。",
               features: [
-                "Team sentiment tracking",
-                "Alignment visualization",
-                "Contribution analytics",
-                "Misalignment alerts"
+                "チーム感情のトラッキング",
+                "アラインメントの可視化",
+                "貢献度分析",
+                "ズレのアラート通知"
               ]
             }
           ].map((service, index) => (
@@ -148,8 +148,8 @@ const Services: React.FC = () => {
 
       {/* Integrations Section */}
       <Section
-        title="Seamless Integrations"
-        subtitle="InsightSync connects with your existing communication and productivity tools."
+        title="連携サービス"
+        subtitle="InsightSyncは、主要なコミュニケーション・業務ツールとシームレスに連携します。"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {[
@@ -180,18 +180,18 @@ const Services: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-6">
-            Don't see your tool? We're constantly adding new integrations.
+            ご希望のツールが見当たらない場合は、お気軽にご相談ください。
           </p>
           <Link to="/contact" className="btn btn-secondary inline-flex items-center">
-            Request an Integration
+            連携リクエストを送る
           </Link>
         </div>
       </Section>
 
       {/* Implementation Process */}
       <Section
-        title="Implementation Process"
-        subtitle="Getting started with InsightSync is quick and seamless."
+        title="導入の流れ"
+        subtitle="InsightSyncの導入はスムーズかつ迅速です。"
         className="bg-gray-50"
       >
         <div className="relative">
@@ -202,29 +202,29 @@ const Services: React.FC = () => {
             {[
               {
                 step: 1,
-                title: "Initial Setup",
-                description: "Connect InsightSync to your communication platforms and configure your organizational structure.",
+                title: "初期設定",
+                description: "InsightSyncを既存のコミュニケーションツールと連携し、組織構成を設定します。",
                 icon: <Layers className="h-6 w-6" />,
                 align: "left"
               },
               {
                 step: 2,
-                title: "Team Onboarding",
-                description: "We'll help your team understand how to leverage InsightSync in their daily workflows.",
+                title: "チーム導入サポート",
+                description: "チームが日々の業務でInsightSyncを活用できるよう、導入支援を行います。",
                 icon: <Users className="h-6 w-6" />,
                 align: "right"
               },
               {
                 step: 3,
-                title: "Integration & Customization",
-                description: "Configure dashboards, reports, and alerts to match your specific organization needs.",
+                title: "連携・カスタマイズ",
+                description: "ダッシュボードやレポート、アラートを組織のニーズに合わせて設定します。",
                 icon: <Zap className="h-6 w-6" />,
                 align: "left"
               },
               {
                 step: 4,
-                title: "Go Live & Support",
-                description: "Begin capturing insights with full support from our customer success team.",
+                title: "本稼働・サポート開始",
+                description: "本格運用を開始し、カスタマーサクセスチームが継続的にサポートします。",
                 icon: <Globe className="h-6 w-6" />,
                 align: "right"
               }
@@ -262,8 +262,8 @@ const Services: React.FC = () => {
 
       {/* Security & Compliance */}
       <Section
-        title="Enterprise-Grade Security"
-        subtitle="We take data security and compliance seriously to protect your sensitive information."
+        title="エンタープライズレベルのセキュリティ"
+        subtitle="大切な情報を守るため、最高水準のセキュリティとコンプライアンスを徹底しています。"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -272,18 +272,18 @@ const Services: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: '-100px' }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-primary-950">Your Data, Protected</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary-950">データの安全を守ります</h3>
             <p className="text-gray-600 mb-6">
-              InsightSync employs enterprise-grade security measures to ensure your organizational data remains secure and compliant with global regulations.
+              InsightSyncは、エンタープライズレベルのセキュリティ対策を実施し、組織の大切なデータを世界基準で保護します。
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
               {[
-                { icon: <Shield className="h-5 w-5" />, title: "SOC 2 Compliance" },
-                { icon: <Shield className="h-5 w-5" />, title: "GDPR Compliance" },
-                { icon: <Shield className="h-5 w-5" />, title: "End-to-end Encryption" },
-                { icon: <Shield className="h-5 w-5" />, title: "Role-based Access" },
-                { icon: <Shield className="h-5 w-5" />, title: "Data Retention Controls" },
-                { icon: <Shield className="h-5 w-5" />, title: "Regular Security Audits" }
+                { icon: <Shield className="h-5 w-5" />, title: "SOC 2認証" },
+                { icon: <Shield className="h-5 w-5" />, title: "GDPR準拠" },
+                { icon: <Shield className="h-5 w-5" />, title: "エンドツーエンド暗号化" },
+                { icon: <Shield className="h-5 w-5" />, title: "ロールベースアクセス" },
+                { icon: <Shield className="h-5 w-5" />, title: "データ保持管理" },
+                { icon: <Shield className="h-5 w-5" />, title: "定期的なセキュリティ監査" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center">
                   <div className="bg-primary-50 p-2 rounded-lg mr-3">
@@ -324,17 +324,17 @@ const Services: React.FC = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Ready to transform your organization's decision-making?
+            組織の意思決定を進化させませんか？
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Start your free 10-day trial today. No credit card required.
+            今すぐ10日間の無料トライアルを始めましょう（クレジットカード不要）
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="btn btn-primary bg-white text-primary-950 hover:bg-gray-100">
-              Start Free Trial
+              無料トライアルを始める
             </Link>
-            <Link to="/contact" className="btn btn-secondary border-white text-white hover:bg-white/10">
-              Schedule a Demo
+            <Link to="/contact" className="btn btn-secondary border-white hover:bg-white/10">
+              デモを申し込む
             </Link>
           </div>
         </motion.div>
