@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FileText, Play } from 'lucide-react';
 
 interface HeroProps {
-  title: string;
+  title: ReactNode;
   subtitle: string;
   ctaPrimary?: {
     text: string;

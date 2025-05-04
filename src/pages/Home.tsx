@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             組織の意思決定を<span className="gradient-text">進化</span>させませんか？
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            10日間の無料トライアルを今すぐ開始。クレジットカード不要です。
+            10日間の無料トライアルを今すぐ開始。クレジットカード不要。
           </p>
           <Link to="/contact" className="btn btn-primary inline-flex items-center">
             無料で始める

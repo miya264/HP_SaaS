@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 interface SectionProps {
   id?: string;
-  title: string;
+  title: ReactNode;
   subtitle?: string;
   children: ReactNode;
   className?: string;

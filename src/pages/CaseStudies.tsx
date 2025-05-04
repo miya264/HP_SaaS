@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../components/Section';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import AnimatedLogos from '../components/AnimatedLogos';
 import { 
   ArrowRight,
   Clock,
@@ -245,23 +246,10 @@ const CaseStudies: React.FC = () => {
 
       {/* Logos Section */}
       <Section
-        title="業界大手も導入"
+        title="導入企業"
         subtitle="多くの企業がInsightSyncで意思決定改革を実現しています。"
       >
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-70">
-          {Array.from({ length: 12 }).map((_, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
-              viewport={{ once: true, margin: '-100px' }}
-              className="flex items-center justify-center p-4"
-            >
-              <div className="h-12 w-full bg-gray-300 rounded"></div>
-            </motion.div>
-          ))}
-        </div>
+        <AnimatedLogos />
       </Section>
 
       {/* CTA Section */}
